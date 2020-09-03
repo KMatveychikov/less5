@@ -1,13 +1,13 @@
 public class Person {
-    public int id;
-    public String name;
-    public String position;
-    public String email;
-    public String phone;
-    public long pay;
-    public int age;
+    private final int id;
+    private final String name;
+    private final String position;
+    private final String email;
+    private final String phone;
+    private final long pay;
+    private final int age;
 
-    public Person( int id, String name, String position, String email, String phone,long pay, int age) {
+    private Person( int id, String name, String position, String email, String phone,long pay, int age) {
         this.id = id;
         this.name = name;
         this.position = position;
@@ -44,6 +44,7 @@ public class Person {
 
             if(persArray[i].age>40) {
                 persArray[i].printInfo();
+                System.out.println("------------");
             }
 
         }
